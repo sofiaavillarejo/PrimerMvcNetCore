@@ -1,0 +1,16 @@
+﻿@*
+	COMENTARIOS EN RAZOR
+*@
+
+@{
+	//esto es codigo c#
+	int valor = 14;
+	string texto = "Hoy es lunes";
+	valor += 1;
+	texto += " y mañana martes.";
+	texto = texto.ToUpper();
+}
+
+@* DIBUJAR VARIABLES
+ *@
+<h2 style="color: green">Texto: @texto, Número: @valor</h2>
