@@ -13,4 +13,16 @@
 
 @* DIBUJAR VARIABLES
  *@
-<h2 style="color: green">Texto: @texto, Número: @valor</h2>
+<h2 style="color: lightgoldenrodyellow">Texto: @texto, Número: @valor</h2>
+
+@* CODIGO LOGICO
+ *@
+
+@if (valor > 0){
+	//codigo c#
+	texto = "POSITIVO";
+	<h3 style="color:lightgreen">@texto</h3>
+} else {
+	texto = "NEGATIVO";
+	<h3 style="color: lightcoral">@texto</h3>
+}
