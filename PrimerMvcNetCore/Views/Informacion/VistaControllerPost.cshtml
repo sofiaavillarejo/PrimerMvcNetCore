@@ -1,0 +1,18 @@
+﻿<h1>Vista Controller POST</h1>
+
+<form method="post">
+@* 	los name se tienen que llamr igual que en el model para que los pinte bien el viewdata
+ *@	
+	<label>Nombre</label>
+	<input type="text" name="nombre" class="form-control"/>
+	<label>Email</label>
+	<input type="text" name="email" class="form-control"/>
+	<label>Edad</label>
+	<input type="text" name="edad" class="form-control" />
+	@* añadimos algo que no tiene nada que ver con el Model *@
+	<label>Aficiones</label>
+	<input type="text" name="aficiones" class="form-control" />
+
+	<button class="btn btn-info">Enviar información</button>
+</form>
+<h1 style="color:lightblue">@ViewData["DATA"]</h1>

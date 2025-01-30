@@ -2,4 +2,14 @@
  *@
  @model Persona
  <h1>Información Controller --> View Model</h1>
- <h2 style="color: lightblue">@Model.Nombre, @Model.Email, @Model.Edad</h2>
+
+ @* esto genera un link <a></a> y envio dos variables al controlador *@
+ @Html.ActionLink("Texto Link", "Action", "Controller", new {variable1="variable1", variable2 = "variable2"});
+
+@*  Se pone si el model es opcional, para preguntar si está o no
+ *@ 
+ @if (Model != null){
+	<h2 style="color: lightblue">@Model.Nombre, @Model.Email, @Model.Edad</h2>
+ }else {
+	 <h1 style="color:red">no tenemos Model</h1>
+ }

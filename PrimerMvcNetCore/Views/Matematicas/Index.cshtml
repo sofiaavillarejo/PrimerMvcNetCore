@@ -1,0 +1,18 @@
+﻿<h1>Menú matemáticas</h1>
+<ul>
+	<li>
+		@Html.ActionLink("Vista Matemáticas Get", "VistaMatematicasGet", "Matematicas", new { num1 = 6, num2 = 4 })
+	</li>
+	<li>
+		<a asp-controller="Matematicas" asp-action="SumarNumerosPost">Sumar Numeros POST</a>
+	</li>
+	<li>
+		<a asp-controller="Matematicas" asp-action="ConjeturaCollatz">Conjetura de Collazt</a>
+	</li>
+	<li>
+		<a asp-controller="Matematicas" asp-action="TablaMultiplicarSimple">Tabla Multiplicar Simple</a>
+	</li>
+	<li>
+		<a asp-controller="Matematicas" asp-action="TablaMultiplicarModel">Tabla Multiplicar Model</a>
+	</li>
+</ul>

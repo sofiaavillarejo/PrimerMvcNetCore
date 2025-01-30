@@ -1,0 +1,18 @@
+﻿@* declaramos el objeto que recibimos en nuestra pagina *@
+@model List<int>
+
+<h2>Conjetura de Collazt</h2>
+
+<form method="post">
+	<label>Número Collazt</label>
+	<input type="text" name="numero" class="form-control"/>
+	<button class="btn btn-warning">Mostrar conjetura</button>
+</form>
+
+@if (Model != null){
+	<ul>
+		@foreach (int num in Model){
+			<li>@num</li>
+		}
+	</ul>
+}
